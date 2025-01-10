@@ -173,10 +173,16 @@
       </div>
     </div>
 	<script>
+	let url = location.origin;
+	if(location.href.match("/stage") && !location.href.match(".stage"))
+		url += '/stage'
 	document.getElementById("btn-test").addEventListener("click",()=>{
-		fetch('http://localhost/stage-woo/wp-json/click5_history_log/API/test',{
+		fetch(url+'/wp-json/click5_history_log/API/test',{
 			method:'POST'
 		}).then(res => res.text())
-		.then(res => console.log(res))
+		.then(res =>{
+			if(res=='true')
+				alert("mail enviado")
+		})
 	})
 	</script>

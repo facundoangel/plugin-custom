@@ -129,7 +129,7 @@ HTML;
   }
  
   
-
+  $src_img = plugin_dir_path(__FILE__)."logo-itecsa.webp";
 
     $message = <<<END
   <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -228,7 +228,7 @@ HTML;
                     </td>
                     
                     <td style="text-align: right; padding: 10px 0 0;">
-                      <img src="https://itecsa.com/wp-content/uploads/2019/08/itecsalogomenu.png" alt="logo itecsa"/>
+                      <img src="src_img" alt="logo itecsa"/>
                     </td>	
                   </tr>
                   </table>
